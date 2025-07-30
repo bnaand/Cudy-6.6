@@ -16,7 +16,7 @@
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-#预置HomeProxy数据
+# 预置HomeProxy数据
 if [ -d *"homeproxy"* ]; then
 	echo " "
 

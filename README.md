@@ -1,38 +1,31 @@
-**English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
+# Cudy tr3000 v1 immortalwrt-24.10 带闭源硬件加速
+## 使用说明：
+### Uboot：  
+[cudy tr3000 v1中文三分区DHCP uboot第二版](https://www.right.com.cn/forum/thread-8415351-1-1.html)  
+使用mod-112m刷入即可(新版256MB不适用)  
+### 固件特点：  
+纯净、简洁、追随源码更新  
+### 添加插件：  
+1、Homeproxy代理插件（已内置软件必要数据，无需配置）  
+2、USB模块支持，移动硬盘，同添加了usb-net支持  
+3、网络共享，ksmbd  
+4、下载工具，Aria2，已添加依赖，只需要在移动硬盘根目录——新建文件夹—重命名—aria2，即可正常运行  
+5、MTK硬件网络加速  
+### 网络信息  
+登录地址：192.168.10.1  
+登录密码：无  
+WIFI名称：immortalwrt-2.4G/5G  
+WIFI密码：无  
+内核版本：5.4.284  
 
-# Actions-OpenWrt
-
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
-
-A template for building OpenWrt with GitHub Actions
-
-## Usage
-
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository.
-- Select `Build OpenWrt` on the Actions page.
-- Click the `Run workflow` button.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
-
-## Tips
-
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
-
-## Credits
+## 感谢
 
 - [Microsoft Azure](https://azure.microsoft.com)
 - [GitHub Actions](https://github.com/features/actions)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
+- [padavanonly](https://github.com/padavanonly/immortalwrt-mt798x-6.6)
+- [VIKINGYFY](https://github.com/VIKINGYFY/OpenWRT-CI)
+- [P3TERX](https://github.com/P3TERX/Actions-OpenWrt)
 - [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
-- [Mattraks/delete-workflow-runs](https://github.com/Mattraks/delete-workflow-runs)
-- [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
-- [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
 
 ## License
 

@@ -1,4 +1,4 @@
-# Cudy tr3000 v1 immortalwrt-24.10 带闭源硬件加速
+# Cudy tr3000 v1 immortalwrt-24.10 6.6内核带闭源硬件加速
 ## 使用说明：
 ### Uboot：  
 [cudy tr3000 v1中文三分区DHCP uboot第二版](https://www.right.com.cn/forum/thread-8415351-1-1.html)  

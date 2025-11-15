@@ -25,8 +25,11 @@ rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall2 package/passwall2-luci
 
 # tailscale
-sed -i '/\/etc\/init\.d\/tailscale/d;/\/etc\/config\/tailscale/d;' feeds/packages/net/tailscale/Makefile
-git clone https://github.com/asvow/luci-app-tailscale package/luci-app-tailscale
+# sed -i '/\/etc\/init\.d\/tailscale/d;/\/etc\/config\/tailscale/d;' feeds/packages/net/tailscale/Makefile
+# git clone https://github.com/asvow/luci-app-tailscale package/luci-app-tailscale
+
+# Modify default IP
+sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
 # defconfig
 # cp -f ../.config .config

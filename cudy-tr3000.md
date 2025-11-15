@@ -5,7 +5,7 @@ luci-app-autoreboot
 luci-app-diskman
 luci-app-passwall2 (xray only)
 luci-app-ramfree
-luci-app-tailscale
+luci-app-ksmbd
 luci-app-ttyd
 luci-app-upnp
-luci-app-wol
+luci-app-aria2

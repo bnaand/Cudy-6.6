@@ -44,6 +44,6 @@ jobs:
       uses: ophub/delete-releases-workflows@main
       with:
         delete_releases: true
-        releases_keep_latest: 4
+        releases_keep_latest: 1
         delete_tags: true
         gh_token: ${{ secrets.GITHUB_TOKEN }}
